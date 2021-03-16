@@ -71,6 +71,18 @@ interface TokensResult {
   tokens: token[];
 }
 
+export async function getTokenDecimals( //temporary bypass, Kabuto's API is down
+  keys: string[],
+  testnet = false
+): Promise<Map<string, number>> {
+  const results = new Map<string, number>();
+  keys.forEach((key) => {
+    results.set(key, 0);
+  });
+  return results;
+}
+
+/**
 export async function getTokenDecimals(
   keys: string[],
   testnet = false
@@ -105,6 +117,7 @@ export async function getTokenDecimals(
 
   return results;
 }
+**/
 
 export async function getTokens(
   accountId: string,

@@ -1,6 +1,6 @@
 {
   "name": "hedera-wallet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hedera Browser Extension Wallet",
   "license": "MIT",
   "private": false,
